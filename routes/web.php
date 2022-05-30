@@ -13,7 +13,7 @@ use App\Models\User;
 |
 */
 
-Route::get('/', function () {
-    auth()->login(User::first());
+  Route::get('/', function () {
+    // auth()->login(User::first());
     return view('welcome');
 });
