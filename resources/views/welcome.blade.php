@@ -132,9 +132,11 @@
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
 <script>
-    Echo.private('App.Models.User.1').notification((notification) => {
-        console.log(notification.message);
-    });
+    // Echo.private('App.Models.User.1').notification((notification) => {
+    //     console.log(notification.message);
+    // });
+    Echo.channel('events')
+        .listen('RealTimeMessage', (e) => console.log('RealTimeMessage: ' + e.message));
 </script>
 </body>
 </html>

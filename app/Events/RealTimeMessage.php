@@ -32,7 +32,7 @@ class RealTimeMessage implements ShouldBroadcast
      * @return \Illuminate\Broadcasting\Channel|array
      */
      public function broadcastOn(): Channel
-     {
-         return new PrivateChannel('events');
-     }
+    {
+        return new Channel('events');
+    }
 }
