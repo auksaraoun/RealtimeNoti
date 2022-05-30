@@ -17,3 +17,9 @@ use App\Models\User;
     // auth()->login(User::first());
     return view('welcome');
 });
+
+
+Route::get('/Customer', function () {
+  // auth()->login(User::first());
+      return "Hello";
+});
